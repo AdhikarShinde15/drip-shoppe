@@ -1,6 +1,6 @@
 <template>
   <div>
-   Landing Page
+    Header
   </div>
 </template>
 
