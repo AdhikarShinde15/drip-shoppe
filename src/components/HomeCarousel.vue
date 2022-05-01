@@ -1,6 +1,6 @@
 <template>
   <div>
-     <VueSlickCarousel >
+     <VueSlickCarousel :autoplay="true">
       <img src="../assets/homeCar.svg" alt="">
       <img src="../assets/homeCar.svg" alt="">
       <img src="../assets/homeCar.svg" alt="">

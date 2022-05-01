@@ -5,14 +5,19 @@
       <span class="left"> Shop The Latest </span>
       <span class="right"> View All </span>
     </div>
+    <div class="latest-products">
+      <LatestProducts v-for="i in 6" :key="i"/>
+    </div>
   </div>
 </template>
 
 <script>
 import Carousel from "../components/HomeCarousel.vue";
+import ProductCard from "../components/reusables/ProductCard.vue"
 export default {
   components: {
     Carousel,
+    LatestProducts: ProductCard
   },
 };
 </script>
@@ -39,5 +44,10 @@ export default {
   line-height: 26px;
   text-transform: capitalize;
   color: #a18a68;
+}
+.latest-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(39em, 1fr));
+  grid-gap: 5em;
 }
 </style>
