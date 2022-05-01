@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <Header/>
     <router-view/>
     <Footer/>
@@ -16,5 +16,11 @@ export default {
 }
 </script>
 <style>
-
+body {
+  margin: 0;
+}
+.app {
+  margin-left: 96px;
+  margin-right: 96px;
+}
 </style>
