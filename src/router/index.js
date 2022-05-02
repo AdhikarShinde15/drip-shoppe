@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import MyAccount from '../views/MyAccount.vue'
+import ShopPlp from '../views/ShopPlp.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/my-account',
     name: 'MyAccount',
     component: MyAccount
+  },
+  {
+    path: '/shop',
+    name: 'Shop',
+    component: ShopPlp
   },
   {
     path: '/about',

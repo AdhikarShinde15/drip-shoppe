@@ -3,7 +3,7 @@
     <Carousel />
     <div class="home-flex">
       <span class="left"> <h1>Shop The Latest</h1> </span>
-      <span class="right"> <h4>View All</h4> </span>
+      <span class="right"> <h4 @click="toShopPlp()">View All</h4> </span>
     </div>
     <div class="latest-products">
       <LatestProducts v-for="i in 6" :key="i"/>
@@ -19,6 +19,11 @@ export default {
     Carousel,
     LatestProducts: ProductCard
   },
+  methods : {
+    toShopPlp() {
+      this.$router.push('/shop');
+    }
+  }
 };
 </script>
 
@@ -44,6 +49,9 @@ export default {
   line-height: 26px;
   text-transform: capitalize;
   color: #a18a68;
+}
+.right h4:hover {
+  cursor: pointer;
 }
 .latest-products {
   display: grid;
