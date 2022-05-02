@@ -74,7 +74,7 @@ export default {
   border: 0;
   outline: 0;
   border-bottom: 1px solid;
-  width: 300px;
+  width: 20rem;
 }
 .footer {
   margin-top: 2rem;

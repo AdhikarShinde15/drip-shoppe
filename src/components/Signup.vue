@@ -5,12 +5,18 @@
       <input type="email" placeholder="email" />
       <input type="password" placeholder="Password" />
       <input type="password" placeholder="Confirm Password" />
+      <Button :BtnText="'Register'"></Button>
     </form>
   </div>
 </template>
 
 <script>
-export default {};
+import Button from "../components/reusables/Button.vue";
+export default {
+  components: {
+    Button,
+  },
+};
 </script>
 
 <style scoped>

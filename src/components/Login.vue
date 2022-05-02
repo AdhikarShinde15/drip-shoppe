@@ -1,8 +1,8 @@
 <template>
   <div>
     <form class="form">
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
+      <input v-model="email" type="email" placeholder="Email" />
+      <input v-model="password" type="password" placeholder="Password" />
       <span class="remember-me">
         <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" />
         <label class="label-checkbox" for="styled-checkbox-1"
@@ -10,16 +10,28 @@
         >
       </span>
 
-      <button>SIGN IN</button>
+      <Button :BtnText="'Login'" @click="OnLogin()" />
       <div class="forgot-password">Have you forgotten your password?</div>
     </form>
   </div>
 </template>
 
 <script>
-import Button from "./reusables/Button.vue";
+import Button from "../components/reusables/Button.vue";
 export default {
   components: { Button },
+  methods: {
+    OnLogin() {
+      console.log("email", this.email);
+      console.log("password", this.password);
+    },
+  },
+  data() {
+    return {
+      email: "",
+      password: "",
+    };
+  },
 };
 </script>
 
@@ -36,12 +48,7 @@ input {
   display: flex;
   flex-direction: column;
 }
-.form button {
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  padding: 20px;
-}
+
 .label-checkbox {
   font-size: 16px;
 }
