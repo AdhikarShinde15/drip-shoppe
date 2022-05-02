@@ -2,8 +2,8 @@
   <div>
     <Carousel />
     <div class="home-flex">
-      <span class="left"> Shop The Latest </span>
-      <span class="right"> View All </span>
+      <span class="left"> <h1>Shop The Latest</h1> </span>
+      <span class="right"> <h4>View All</h4> </span>
     </div>
     <div class="latest-products">
       <LatestProducts v-for="i in 6" :key="i"/>
@@ -40,7 +40,7 @@ export default {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 36px;
   line-height: 26px;
   text-transform: capitalize;
   color: #a18a68;
