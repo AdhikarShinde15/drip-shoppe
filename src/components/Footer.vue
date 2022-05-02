@@ -1,8 +1,5 @@
 <template>
   <div class="footer">
-    <!-- <div class="divider">
-      <img src="../assets/divider.svg" alt="" />
-    </div> -->
     <div class="contact-email">
       <div class="services">
         <div>CONTACT</div>
