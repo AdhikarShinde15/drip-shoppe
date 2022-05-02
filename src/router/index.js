@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import MyAccount from '../views/MyAccount.vue'
 import ShopPlp from '../views/ShopPlp.vue'
+import Blogs from '../views/Blogs.vue'
+import OurStory from '../views/OurStory.vue'
+import Cart from '../views/Cart.vue'
 
 Vue.use(VueRouter)
 
@@ -13,6 +16,11 @@ const routes = [
     component: Home
   },
   {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart
+  },
+  {
     path: '/my-account',
     name: 'MyAccount',
     component: MyAccount
@@ -21,6 +29,16 @@ const routes = [
     path: '/shop',
     name: 'Shop',
     component: ShopPlp
+  },
+  {
+    path: '/blogs',
+    name: 'Blogs',
+    component: Blogs
+  },
+  {
+    path: '/ourstory',
+    name: 'OurStory',
+    component: OurStory
   },
   {
     path: '/about',

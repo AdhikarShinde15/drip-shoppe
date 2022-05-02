@@ -1,22 +1,28 @@
 <template>
-    <div>
-        <span>Product Listing Page</span>
-        <img src="../assets/Lavori-in-corso.svg" alt="">
-    </div>
+  <div>
+    <span class="title">
+      <h1>Shop The Latest</h1>
+    </span>
+    <Filters/>
+  </div>
 </template>
 
 <script>
-    export default {
-        
+import Filters from '../components/PlpFilters.vue'
+export default {
+    components : {
+        Filters
     }
+};
 </script>
 
 <style scoped>
-img {
-    width: 300px;
-    height: 300px;
-}
-span {
-    font-size: 50px;
+.title {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 43px;
+  color: #000000;
 }
 </style>
