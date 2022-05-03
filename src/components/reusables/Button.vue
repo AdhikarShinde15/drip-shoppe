@@ -1,15 +1,23 @@
 <template>
-    <div>
-    <button>Click Me</button>
-    </div>
+  <div>
+    <button v-on="$listeners" class="btn">{{ BtnText }}</button>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+  props: {
+    BtnText: String,
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.btn {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  width: 100%;
+}
 </style>
