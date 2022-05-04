@@ -20,8 +20,8 @@ body {
     margin: 0;
 }
 .app {
-    margin-left: 96px;
-    margin-right: 96px;
+    max-width: 93%;
+    margin: auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
