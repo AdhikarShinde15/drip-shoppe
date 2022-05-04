@@ -1,15 +1,13 @@
 <template>
-
-    <div class="myAccount-card">
-      <div class="heading">My Account</div>
-      <div class="button-container">
-        <button class="button" @click="toggleLogin()">Sign In</button>
-        <button class="button" @click="toggleSignup()">Register</button>
-      </div>
-      <Login class="login" v-if="login" />
-      <Signup class="login" v-if="!login" />
+  <div class="myAccount-card">
+    <div class="heading">My Account</div>
+    <div class="button-container">
+      <button class="button" @click="toggleLogin()">Sign In</button>
+      <button class="button" @click="toggleSignup()">Register</button>
     </div>
-  
+    <Login class="login" v-if="login" />
+    <Signup class="login" v-if="!login" :disabled="login" />
+  </div>
 </template>
 
 <script>
@@ -23,6 +21,7 @@ export default {
   data() {
     return {
       login: true,
+      isClicked: false,
     };
   },
   methods: {
@@ -44,17 +43,15 @@ export default {
   margin: 0 auto;
   margin-top: 10vh;
   margin-bottom: 25vh;
-  /* border: 1px solid #bacdd8; */
   padding: 20px;
   border-radius: 12px;
   align-items: center;
-  min-width:400px
+  min-width: 400px;
 }
 .button-container {
   width: 80%;
   display: flex;
   height: 4rem;
-  /* border: 1px solid #bacdd8; */
   padding: 2px;
   border-radius: 15px;
   background-color: #efefef;
@@ -76,5 +73,9 @@ export default {
 }
 .login {
   width: 80%;
+}
+.button:active {
+  background-color: black;
+  color: white;
 }
 </style>
