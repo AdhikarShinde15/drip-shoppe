@@ -1,5 +1,8 @@
 <template>
-  <div class="myAccount-card">
+  <div>
+    <Forgot />
+  </div>
+  <!-- <div class="myAccount-card">
     <div class="heading">My Account</div>
     <div class="button-container">
       <button class="button" @click="toggleLogin()">Sign In</button>
@@ -7,16 +10,18 @@
     </div>
     <Login class="login" v-if="login" />
     <Signup class="login" v-if="!login" :disabled="login" />
-  </div>
+  </div> -->
 </template>
 
 <script>
 import Signup from "../components/Signup.vue";
 import Login from "../components/Login.vue";
+import Forgot from "../components/ForgotPassword.vue";
 export default {
   components: {
     Signup,
     Login,
+    Forgot,
   },
   data() {
     return {
