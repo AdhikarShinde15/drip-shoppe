@@ -55,7 +55,7 @@ export default {
 }
 .latest-products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(39em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
   grid-gap: 5em;
 }
 </style>

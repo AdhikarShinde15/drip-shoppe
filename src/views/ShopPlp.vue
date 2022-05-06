@@ -3,16 +3,16 @@
     <span class="title">
       <h1>Shop The Latest</h1>
     </span>
-    <Filters/>
+    <Filters />
   </div>
 </template>
 
 <script>
-import Filters from '../components/PlpFilters.vue'
+import Filters from "../components/PlpFilters.vue";
 export default {
-    components : {
-        Filters
-    }
+  components: {
+    Filters,
+  },
 };
 </script>
 
